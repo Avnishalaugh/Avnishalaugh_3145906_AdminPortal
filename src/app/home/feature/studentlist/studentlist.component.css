@@ -1,0 +1,115 @@
+.filterStudent{
+ float:left;
+ margin-top: 10px;
+ margin-left:10px;
+ 
+}
+
+.searchStudent{
+ float:right;
+ margin-top: 10px;
+ margin-right:10px;
+ margin-bottom: 5px;
+}
+
+.student_detail{
+    border:1px solid black;
+    margin-left:20px;
+    margin-top:55px;
+    margin-bottom:20px;
+    position:relative;
+    width:46%;
+    height:125px;
+    background-color: white;
+    float:left;
+}
+
+.name{
+    margin-top: 30px;
+    margin-left: 115px;
+    margin-bottom: 0px;
+}
+.category{
+    margin-top: 2px;
+    margin-left: 115px;
+    margin-bottom: 4px;
+}
+.marginAuto{
+    margin:auto;
+  }
+
+.w155{
+    width:155px;
+    height:30px;
+}
+
+.w145{
+    width:145px;
+    height:25px;
+}
+
+.profile{
+    border:2px solid black;
+    float:left;
+    margin-left:10px;
+    margin-top: 10px;
+}
+
+.studentList{
+    border:1px solid black;
+    /* min-height: 100px; */
+   /* position:absolute;  */
+    background-color: #ccc;
+    width:40%;
+}
+
+.student_list{
+    position: relative;
+    min-width: 500px;
+}
+
+.font16{
+    font-size: 16px;
+}
+
+.font14{
+    font-size: 14px;
+};
+
+.button1{
+    margin-top: 45px;
+    margin-left: 100px;
+}
+
+.green{
+    background-color: green;
+    margin-left: 10px;
+    margin-right: 3px;
+}
+
+.gray{
+    background-color: grey;
+    margin-left: 4px;
+    margin-right: 3px;
+}
+
+.red{
+    background-color: red;
+    margin-left: 4px;
+    margin-right: 3px;
+}
+
+.Domestic{
+    background-color:grey;
+  }
+  
+  .International{
+      background-color: beige;
+  }
+  .domestic{
+    background-color:grey;
+  }
+
+  .international{
+    background-color: beige;
+}

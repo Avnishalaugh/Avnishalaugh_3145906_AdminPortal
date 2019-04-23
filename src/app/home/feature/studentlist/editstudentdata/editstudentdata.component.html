@@ -1,0 +1,76 @@
+<app-navigation></app-navigation>
+<form #studentEditDataForm="ngForm">
+<table align="center" cellpadding = "25">
+         <!-- <div class="avi"> <h4 align="center" >{{viewRecord}}</h4 ></div>  -->
+  <!----- First Name ---------------------------------------------------------->
+  <tr>
+  <td>STUDENT NAME VIEW</td>
+  <td><input #fName type="text" name="fName" value={{student.fName}} />
+  </td>
+  </tr>
+ 
+  <!----- Category ------------------------------------------------------------->
+  <tr>
+  <td>CATEGORY</td>
+  <td>
+      <select #category name="category" class="custom-select" id="category" disabled required>
+          <option value="-1">------- {{student.category}} -------</option> 
+          <option name="Domestic" value="domestic">------- Domestic -------</option>
+          <option name="International" value="international">----- International -----</option></select>
+  </td>
+  </tr>
+   
+  <!----- Documents ------------------------------------------------------------>
+   
+  <tr>
+      <td>DOCUMENTS <br /><br /><br /></td>
+       
+      <td>
+      <span class="">Domicile</span>
+      <input #domicile type="checkbox" class="floatRR" checked /><span class="floatRM">&emsp;</span><br/><br/>
+      <span class="">Birth certificate</span>
+      <input #birth type="checkbox" class="floatRR" checked  /><span class="floatRM">&emsp;</span><br/><br/>
+      <span class="">Marksheets</span>
+      <input #mark type="checkbox" class="floatRR" checked /><span class="floatRM">&emsp;</span><br/><br/>
+      <span class="">Police clearance</span>
+      <input #police type="checkbox" class="floatRR" [checked]="student.policeClearance=='checked'" /><span class="floatRM">&emsp;</span><br/><br/>
+      <span class="">Passport</span>
+      <input #passport type="checkbox" class="floatRR" [checked]="student.passport=='checked'"  /><span class="floatRM">&emsp;</span><br/><br/>
+      <span class="">Declaration</span>
+      <input #declare type="checkbox" class="floatRR" checked /><span class="floatRM">&emsp;</span><br/><br/>
+      </td>
+      </tr>
+
+
+  <!----- Date Of Birth -------------------------------------------------------->
+  <tr>
+  <td>DATE OF BIRTH</td>
+  <td>
+  <input #date type="text" value="{{student.date}}" />
+  </td>
+  </tr>
+
+  <!----- Father's Name ---------------------------------------------------------->
+  <tr>
+  <td>FATHER'S NAME</td>
+  <td><input #father type="text" name="fatherName"  value="{{student.fatherName}}" />
+  </td>
+  </tr>
+   
+  <!----- Mother's Name ---------------------------------------------------------->
+  <tr>
+  <td>MOTHER'S NAME</td>
+  <td><input #mother type="text"  name="motherName"  value="{{student.motherName}}" />
+  </td>
+  </tr>
+  
+  <!----- Submit and Reset ------------------------------------------------------->
+  <tr>
+    <td colspan="2" align="center">
+      <button name="Save" (click)="saveEditChanges(fName.value,student.category,domicile.checked,true,true,true,true,true,date.value,father.value,mother.value)">SAVE</button>
+      <button name="back" (click)="navigateBack()">BACK</button>
+    </td>
+  </tr>
+  </table>
+  </form>
+  <app-footer></app-footer>

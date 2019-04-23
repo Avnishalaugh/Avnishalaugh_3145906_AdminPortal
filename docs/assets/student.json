@@ -1,0 +1,41 @@
+[
+   {
+       "fName":"Avnish",
+       "category":"Domestic",
+       "domicile":"True",
+       "birth":"True",
+       "marksheet":"True",
+       "policeClearance":"False",
+       "passport":"True",
+       "declaration":"False",
+       "date":"25-07-1998",
+       "fatherName":"Mr Baldev Raj",
+       "motherName":"Mrs Usha Alaugh"
+   }, 
+   {
+        "fName":"Ishaan",
+        "category":"International",
+        "domicile":"True",
+        "birth":"True",
+        "marksheet":"True",
+        "policeClearance":"True",
+        "passport":"True",
+        "declaration":"False",
+        "date":"18-01-2013",
+        "fatherName":"Mr Nitin Girdhar",
+        "motherName":"Mrs Shikha Girdhar"
+    }, 
+    {
+        "fName":"Ruhaani",
+        "category":"International",
+        "domicile":"True",
+        "birth":"True",
+        "marksheet":"True",
+        "policeClearance":"False",
+        "passport":"False",
+        "declaration":"True",
+        "date":"23-10-2018",
+        "fatherName":"Mr Nitin Girdhar",
+        "motherName":"Mrs Shikha Girdhar"
+   } 
+]

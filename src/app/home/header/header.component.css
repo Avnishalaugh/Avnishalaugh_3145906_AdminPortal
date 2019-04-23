@@ -1,0 +1,187 @@
+.main-body{
+    width:100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-family: robotoregular;
+    margin:0px;
+}
+
+.header{
+    position: absolute;
+    left:190px;
+    top:15px;
+    float: left;
+    height:90px;
+}
+
+.header p{
+    margin:0px;
+    float: right;
+    text-align: right;
+    position: relative;
+    left: 800px;
+    color:#fcb043   ;
+    font-family: robotoregular;
+    font-size: 21px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+  }
+  
+.main-header{
+    height:90px;
+    background: #105d98;
+    position: relative;
+    top: 90px;
+}
+
+.main-header .container{
+    background: url(https://cas.nagarro.com/images/bg1.png) no-repeat center top;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    height: 100%;
+    width: 1170px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+.container h1{
+    padding: 0px 120px;
+    color: #fff;
+    margin-top: 25px;
+    font-size: 35px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    font-family: 'roboto-thin';
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.main-header h1:before{
+    position: absolute;
+    content: '';
+    background: #67a0c5;
+    height: 1px;
+    width: 100px;
+    left:10px;
+    top: 22px;
+}
+
+.main-header h1:after {
+    position: absolute;
+    content: '';
+    background: #67a0c5;
+    right: 10px;
+    height: 1px;
+    width: 100px;
+    top: 22px;
+}
+
+.login-container{
+position: relative;
+top: 100px;
+max-width: 430px;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+border: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+
+.textbox {
+    padding-left: 30px;
+}
+
+.form-control {
+    box-shadow: 0 0 0 #fff;
+}
+.form-control {
+    display: block;
+    width: 88%;
+    height: 30px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+
+.form-group .form-control {
+    border-radius: 0;
+}
+
+input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].btn-block {
+    width: 100%;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    height: 40px;
+}
+.btn-secondary {
+    background: #fcb043;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    border:0px;
+}
+
+.modal-title {
+    padding: 0px 60px;
+    margin: 0 0 20px;
+    color: #fcb043;
+    font-size: 24px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+}
+
+.modal-title:before {
+    left: 0px;
+}
+
+.modal-title:before, .modal-title:after {
+    position: absolute;
+    content: '';
+    background: #fcb043;
+    height: 1px;
+    width: 50px;
+    top: 13px;
+}
+
+.modal-title:after {
+    right: 0px;
+}
+
+.modal-title:before, .modal-title:after {
+    position: absolute;
+    content: '';
+    background: #fcb043;
+    height: 1px;
+    width: 50px;
+    top: 13px;
+}
+

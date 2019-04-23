@@ -1,0 +1,73 @@
+<app-navigation></app-navigation>
+<table align="center" cellpadding = "25">
+         <!-- <div class="avi"> <h4 align="center" >{{viewRecord}}</h4 ></div>  -->
+  <!----- First Name ---------------------------------------------------------->
+  <tr>
+  <td>STUDENT NAME VIEW</td>
+  <td><input type="text" name="fName" value={{student.fName}} disabled/>
+  </td>
+  </tr>
+ 
+  <!----- Category ------------------------------------------------------------->
+  <tr>
+  <td>CATEGORY</td>
+  <td>
+      <input type="text" name="category" id="category" value={{student.category}} disabled>
+      <!-- <option value="-1">------- Category -------</option> -->
+      <!-- <option value="1">------- Domestic -------</option>
+      <option value="2">----- International -----</option></select> -->
+  </td>
+  </tr>
+   
+  <!----- Documents ------------------------------------------------------------>
+   
+  <tr>
+      <td>DOCUMENTS <br /><br /><br /></td>
+       
+      <td>
+      <span class="">Domicile</span>
+      <input type="checkbox" class="floatRR" checked disabled/><span class="floatRM">&emsp;</span><br/><br/>
+      <span class="">Birth certificate</span>
+      <input type="checkbox" class="floatRR" checked  disabled/><span class="floatRM">&emsp;</span><br/><br/>
+      <span class="">Marksheets</span>
+      <input type="checkbox" class="floatRR" checked disabled/><span class="floatRM">&emsp;</span><br/><br/>
+      <span class="">Police clearance</span>
+      <input type="checkbox" class="floatRR" [checked]="student.policeClearance=='checked'" disabled/><span class="floatRM">&emsp;</span><br/><br/>
+      <span class="">Passport</span>
+      <input type="checkbox" class="floatRR" [checked]="student.passport=='checked'" disabled /><span class="floatRM">&emsp;</span><br/><br/>
+      <span class="">Declaration</span>
+      <input  type="checkbox" class="floatRR" checked disabled/><span class="floatRM">&emsp;</span><br/><br/>
+      </td>
+      </tr>
+
+
+  <!----- Date Of Birth -------------------------------------------------------->
+  <tr>
+  <td>DATE OF BIRTH</td>
+  <td>
+  <input type="text" value="{{student.date}}" disabled/>
+  </td>
+  </tr>
+
+  <!----- Father's Name ---------------------------------------------------------->
+  <tr>
+  <td>FATHER'S NAME</td>
+  <td><input type="text" name="fatherName"  value="{{student.fatherName}}" disabled/>
+  </td>
+  </tr>
+   
+  <!----- Mother's Name ---------------------------------------------------------->
+  <tr>
+  <td>MOTHER'S NAME</td>
+  <td><input type="text"  name="motherName"  value="{{student.motherName}}" disabled/>
+  </td>
+  </tr>
+  
+  <!----- Submit and Reset ------------------------------------------------------->
+  <tr>
+    <td colspan="2" align="center">
+      <button name="back" (click)="navigateBack()">BACK</button>
+    </td>
+  </tr>
+  </table>
+  <app-footer></app-footer>

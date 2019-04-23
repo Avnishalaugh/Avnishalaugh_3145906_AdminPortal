@@ -1,0 +1,28 @@
+.boarding{
+    border:2px solid black;
+    width:404px;
+    height:215px;
+    margin: auto;
+    float: left;
+}
+
+.mT140{
+    margin-top: 140px;
+    margin-right: 20px;
+    margin-bottom: 140px;
+}
+
+.student-list{
+   
+    width:250px;
+    height:215px;
+    margin: auto;
+    float: left;
+}
+
+.student-list img{
+    margin-top: 140px;
+    margin-right: 20px;
+    margin-bottom: 140px;
+    border:2px solid black;
+}

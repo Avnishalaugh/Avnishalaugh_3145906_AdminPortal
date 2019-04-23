@@ -1,0 +1,33 @@
+.feature{
+    position: relative;
+    border: 2px solid black;
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #ccc;
+}
+
+[_nghost-c5] {
+    display: inline-block !important;
+    width: 100%;
+}
+.mat-tab-link-active,
+.mat-tab-label-active {
+    background-color: #5EADB0;
+    color: #D5FEFF;
+    border: 1px solid #6B7F7F;
+    font-weight: bold;
+}
+
+.mat-tab-link,
+.mat-tab-label {
+    line-height: 30px !important;
+    height: 30px !important;
+    max-width: 80px !important;
+    border: 2px solid black;
+}
+
+.tabContentContainer {
+    border: 1px solid #aaaaaa;
+    background: #ffffff 50% 50%;
+}

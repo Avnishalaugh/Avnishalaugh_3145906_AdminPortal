@@ -1,0 +1,34 @@
+<app-navigation></app-navigation>
+<app-feature></app-feature>
+<div class="studentList marginAuto">
+  <div class="filterStudent">
+      <select name="category" #selectedCategory (change)="filterStudentDataByCategory(selectedCategory.value);editStudentDataList()" class="w155 font14" id="category">
+          <option value="all">------- All --------</option>
+          <option value="domestic">-------- Domestic --------</option>
+          <option value="international">------ International ------</option></select>
+  </div>
+  <div class="searchStudent">
+      <input type="text" class="w145 font16" name="search" maxlength="15" [(ngModel)]="searhStudent"/>
+  </div>
+
+  <div class="student_list" >
+    <div class="student_detail {{student.category}}" *ngFor="let student of studentEdittedData">
+      <div class="profile">
+        <img src="https://www.iconbunny.com/icons/media/catalog/product/cache/2/thumbnail/600x/1b89f2fc96fc819c2a7e15c7e545e8a9/1/4/143.5-convocation-icon-iconbunny.jpg" width=90px; height=100px;>
+      </div>
+      <div class="name ">
+      {{student.fName}}
+      </div>
+      <div class="category ">
+      {{student.category}}
+      </div>
+      <div class="button1">
+     <button class="green" name="edit" (click)="editStudentData(student)" >Edit</button>
+     <button class="gray" name="view" (click)="viewStudentData(student)" >View</button>
+     <button class="red" name="del" (click)="openConfirmationDialog(student)">Del</button> 
+    </div>
+  </div>
+
+ </div>
+</div>
+<app-footer></app-footer>

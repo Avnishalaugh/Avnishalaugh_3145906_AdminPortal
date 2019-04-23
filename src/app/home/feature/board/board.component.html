@@ -1,0 +1,94 @@
+<app-navigation></app-navigation>
+<app-feature></app-feature>
+<div class="onboard marginAuto">
+  <div class="center">
+    <h3 class="colorGreen">{{title}}</h3>
+  </div>
+  <div class="onboardForm">
+          
+        <form #studentDataForm="ngForm" (ngSubmit)="sendStudentData(studentDataForm.value)">
+          <table align="center" cellpadding = "25">
+           
+          <!----- First Name ---------------------------------------------------------->
+          <tr>
+          <td>STUDENT NAME</td>
+          <td><div class="form-group"><input #fName="ngModel" type="text" [class.is-invalid]="fName.invalid && fName.touched" class="w140 form-control" name="fName" maxlength="30" ngModel required/>
+                <small class="text-danger" [class.d-none]="fName.valid || fName.untouched">Student Name is required</small>
+                <!-- <div *ngIf="fName.errors && (fName.touched || fName.invalid)">
+                  <small class="text-danger" *ngIf="fName.errors.required">Student First Name id required</small>
+                  <small class="text-danger" *ngIf="fName.errors.maxlength">Student First Name must not be more than 30 characters</small>
+                </div> -->
+              </div>
+          </td>
+          </tr>
+           
+          <!----- Category ------------------------------------------------------------->
+          <tr>
+          <td>CATEGORY</td>
+          <td>
+              <div class="form-group">
+              <select #category name="category" class="custom-select" id="category" ngModel required>
+              <!-- <option value="-1">------- Category -------</option> -->
+              <option value="domestic">------- Domestic -------</option>
+              <option value="international">----- International -----</option></select>
+              </div>
+          </td>
+          </tr>
+           
+          <tr>
+              <td>DOCUMENTS <br /><br /><br /></td>
+               
+              <td>
+              <span class="">Domicile</span>
+              <input #domicile type="checkbox" class="floatRR" name="domicile" unchecked ngModel required/><span class="floatRM" *ngIf="category.value=='international' || category.value=='domestic'">&emsp;*</span><br/><br/>
+              <span class="">Birth certificate</span>
+              <input #birth type="checkbox" class="floatRR" name="birth" unchecked ngModel required/><span class="floatRM" *ngIf="category.value=='international' || category.value=='domestic'">&emsp;*</span><br/><br/>
+              <span class="">Marksheets</span>
+              <input #marksheet type="checkbox" class="floatRR" name="marksheet" unchecked ngModel  required/><span class="floatRM" *ngIf="category.value=='international' || category.value=='domestic'">&emsp;*</span><br/><br/>
+              <span class="">Police clearance</span>
+              <input #policeClearance type="checkbox" class="floatRR" name="policeClearance" unchecked ngModel [required]="category.value=='international'"/><span class="floatRM" *ngIf="category.value=='international'">&emsp;*</span><br/><br/>
+              <span class="">Passport</span>
+              <input #passport type="checkbox" class="floatRR" name="passport" unchecked ngModel [required]="category.value=='international'"/><span class="floatRM" *ngIf="category.value=='international'">&emsp;*</span><br/><br/>
+              <span class="">Declaration</span>
+              <input #declaration type="checkbox" class="floatRR" name="declaration" unchecked ngModel required /><span class="floatRM" *ngIf="category.value=='international' || category.value=='domestic'">&emsp;*</span><br/><br/>
+              </td>
+              </tr>
+
+
+          <!----- Date Of Birth -------------------------------------------------------->
+          <tr>
+          <td>DATE OF BIRTH</td>
+          <td>
+            <div class="form-group"><input #date name="date" type="date" class="form-control" data-date-inline-picker="true" ngModel required/></div>
+          </td>
+          </tr>
+        
+          <!----- Father's Name ---------------------------------------------------------->
+          <tr>
+          <td>FATHER'S NAME</td>
+          <td><div class="form-group"><input #fatherName="ngModel" type="text" class="w140 form-control" [class.is-invalid]="fatherName.invalid && fatherName.touched" name="fatherName" maxlength="20"  ngModel required/></div>
+            <small class="text-danger" [class.d-none]="fatherName.valid || fatherName.untouched">Father Name is required</small>
+          </td>
+          </tr>
+           
+          <!----- Mother's Name ---------------------------------------------------------->
+          <tr>
+          <td>MOTHER'S NAME</td>
+          <td><div class="form-group"><input #motherName="ngModel" type="text" class="w140 form-control" [class.is-invalid]="motherName.invalid && motherName.touched" name="motherName" maxlength="20"  ngModel required/></div>
+            <small class="text-danger" [class.d-none]="motherName.valid || motherName.untouched">Mother Name is required</small>
+          </td>
+          </tr>
+          
+          <!----- Submit and Reset ------------------------------------------------------->
+          <tr>
+          <td colspan="2" align="center">
+              <div class="form-group">
+          <button [disabled]="studentDataForm.invalid" class="btn btn-primary" type="submit">Onboard</button></div>
+          </td>
+          </tr>
+          </table>
+           </form>
+           
+  </div>
+</div>
+<app-footer></app-footer>

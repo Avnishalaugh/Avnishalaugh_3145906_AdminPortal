@@ -1,0 +1,35 @@
+.footer{
+    width:100%;
+    height:70px;
+    overflow: hidden;
+    bottom: 0px;
+}
+
+.border{
+   border: 1px solid #dee2e6!important;
+}
+
+.mT500{
+    margin-top: 500px;
+}
+
+.mL100{
+    margin-left: 200px;
+    margin-top:20px;
+    width:40%;
+    float: left;
+}
+
+.align{
+    text-align: right;
+    margin-top:20px;
+    margin-right:200px;
+}
+.background{
+ background-color: #ccc;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}

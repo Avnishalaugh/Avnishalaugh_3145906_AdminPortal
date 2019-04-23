@@ -1,0 +1,9 @@
+<div class="navigation border background">
+    <div *ngFor="let navigation of navigations">
+      <div class="fLeft mL10 mR10 mT10 listStyle"><a href="{{navigation.link}}">{{navigation.name}}</a>&emsp;|</div>
+      </div>
+      <div class="welcome mL10 mR20 mT10"><img width="25px" src="https://cdn2.vectorstock.com/i/1000x1000/47/36/human-man-user-profile-avatar-glyph-icon-vector-10704736.jpg"/>
+        {{username | titlecase}}
+      </div>
+  </div>
+  
